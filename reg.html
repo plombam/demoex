@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHINIM</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <h1>CHINIM</h1>
+        <div>
+            <button>Регистрация</button>
+            <a href="авторизация.html"><button>Авторизация</button></a>
+            <button>Сформировать заявку</button>
+        </div>
+    </header>
+
+    <div class="registration-form">
+        <h2>Регистрация</h2>
+        <form action="/register" method="post">
+            <input type="text" name="name" placeholder="Имя" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="tel" name="phone" placeholder="Номер телефона" required>
+            <input type="password" name="password" placeholder="Пароль" required>
+            <button type="submit">Зарегистрироваться</button>
+        </form>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2022 CHINIM. All rights reserved.</p>
+    </footer>
+</body>
+</html>

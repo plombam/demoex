@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHINIM</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <h1>CHINIM</h1>
+        <div>
+            <button>Регистрация</button>
+            <button>Авторизация</button>
+            <button>Сформировать заявку</button>
+        </div>
+    </header>
+
+    <div class="application-form">
+        <h2>Форма заявки</h2>
+        <form action="/submit-application" method="post">
+            <input type="text" name="car-name" placeholder="Название автомобиля" required>
+            <textarea name="problem-description" placeholder="Опишите проблему" required></textarea>
+            <label for="appointment-time">Выберите дату и время:</label>
+            <input type="datetime-local" id="appointment-time" name="appointment-time" min="2022-01-01T08:00" max="2022-12-31T21:00" required>
+            <button type="submit">Отправить заявку</button>
+        </form>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2022 CHINIM. All rights reserved.</p>
+    </footer>
+</body>
+</html>
